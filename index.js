@@ -5,7 +5,6 @@ const app = express();
 let list = [];
 
 app.get('/list', (req, res) => {
-    list.push(params.email);
     res.send(list.join('\r\n'));
 });
 
