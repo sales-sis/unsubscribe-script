@@ -5,7 +5,7 @@ const app = express();
 let list = [];
 
 app.get('/list', (req, res) => {
-    const html = list.map(item => `<p>${item}</p>`)
+    const html = list.map(item => `<p>${item}</p>`).join()
     res.send(html);
 });
 
