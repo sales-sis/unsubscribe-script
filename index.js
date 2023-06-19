@@ -5,7 +5,9 @@ const app = express();
 let list = [];
 
 app.get('/list', (req, res) => {
-    res.send(list.join('\r\n'));
+    const string = list.join(`
+    `);
+    res.send(list);
 });
 
 app.get('/unsubscribe/:email', (req, res) => {
